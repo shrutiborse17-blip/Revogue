@@ -1,0 +1,24 @@
+# REVOGUE • B.Tech Web Technology Laboratory (WTL) Syllabus Mapping
+
+This document provides a comprehensive mapping of all **16 WTL Practicals** implemented within the **REVOGUE** full-stack pre-loved marketplace project.
+
+---
+
+| Practical No. | WTL Syllabus Topic | REVOGUE Implementation Details | Key Files & Components |
+|---|---|---|---|
+| **Practical 1** | HTML5 Headings, Lists, Images & Multimedia | Semantic heading hierarchy (`h1`-`h4`), ordered delivery timelines, unordered feature lists, responsive lazy-loaded WebP/JPEG product imagery with fallbacks. | `index.html`, `src/pages/HomePage.tsx`, `src/pages/ProductDetailPage.tsx` |
+| **Practical 2** | Semantic HTML Layout (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`) | Structured document layout with accessible landmark elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`). Zero `<div>`-soup in core view hierarchy. | `src/components/Navbar.tsx`, `src/components/Footer.tsx`, `src/pages/ProductDetailPage.tsx` |
+| **Practical 3** | Inline, Internal, and External CSS | Demonstrates external Tailwind CSS utility architecture, scoped design tokens, and dynamic inline styling for calculated progress bars (e.g. Revogue Condition Score meter, trust bars). | `src/index.css`, `src/components/ConditionScoreMeter.tsx` |
+| **Practical 4** | Responsive Design (Flexbox, CSS Grid & Media Queries) | Mobile-first 12-column grid system, auto-fit product cards (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4`), flexible flex navigation, drawer overlays on small viewports. | `src/pages/MarketplacePage.tsx`, `src/components/Navbar.tsx` |
+| **Practical 5** | CSS Positioning, Sticky Navigation, Badges & Transitions | `sticky top-0 z-50` backdrop-blur navigation, `absolute` condition badges ("Like New", "Worn 2 times"), floating cart counter badge, smooth CSS transitions (`duration-200 ease-out`). | `src/components/Navbar.tsx`, `src/components/ProductCard.tsx` |
+| **Practical 6** | JavaScript: Arrays, Map, Filter, Reduce, Sorting | Advanced in-memory and client-side array transformations: `.filter()` for categories/conditions/budget, `.sort()` for price/date/score, `.reduce()` for cart subtotals and platform commission. | `src/utils/cartCalculations.ts`, `src/pages/MarketplacePage.tsx` |
+| **Practical 7** | Frontend Form Validation & Sanitization | Client-side validation for User Registration, Seller Listing creation, Address checkout forms, and Mock Payment details with regex checks for PIN codes, phones, and email syntax. | `src/components/ProductListingModal.tsx`, `src/pages/CheckoutPage.tsx` |
+| **Practical 8** | React SPA Architecture & JSX Syntax | Single Page Application with component modularity, strict TypeScript typing, JSX templates, zero full-page browser reloads. | `src/App.tsx`, `src/components/` |
+| **Practical 9** | React Hooks: `useState`, `useEffect`, `useContext`, Custom Hooks | State management via `useState` for filter controls/drawers, `useEffect` for debounced search and live data polling, custom Auth and Cart contexts. | `src/context/AuthContext.tsx`, `src/context/CartContext.tsx` |
+| **Practical 10** | Fetch API & RESTful JSON Communication | Robust API service layer using native `fetch()` communicating with Express backend endpoints returning standardized JSON payloads. | `src/services/api.ts` |
+| **Practical 11** | DOM Events & Interactive UX Handlers | Click events, modal dismissals on overlay click, keyboard navigation, image gallery thumbnail switching, condition score interactive recalculations. | `src/components/ImageGallery.tsx`, `src/pages/ProductDetailPage.tsx` |
+| **Practical 12** | Native PHP Form Handling, Input Validation, and String Functions | Dedicated PHP module with `$_POST` handling, `htmlspecialchars()`, `preg_match()`, `strlen()`, `ucwords()`, `str_word_count()`, and session management with `session_start()`. | `php-demo/forms/contact.php`, `php-demo/sessions/login.php` |
+| **Practical 13** | PHP + MySQL Database Connectivity & CRUD | Direct PDO connection, prepared statements defending against SQL Injection, full Create, Read, Update, Delete operations for category management. | `php-demo/crud/categories.php` |
+| **Practical 14** | Node.js + Express.js Web Server & Middleware | Express 4.x application server with JSON body parsing, CORS headers, authentication middleware, error handler, and static file serving. | `server.ts` |
+| **Practical 15** | Complete REST API Architecture | RESTful endpoints with standard HTTP verbs (GET, POST, PUT, DELETE) and status codes (200, 201, 400, 401, 404, 500) for products, cart, orders, delivery tracking, and reviews. | `server.ts` (`/api/*`) |
+| **Practical 16** | Capstone Course Project: REVOGUE Pre-Loved Resale Marketplace | Comprehensive production-grade full-stack platform integrating buyer, seller, creator, and admin workflows with relational database schemas. | Entire Repository |

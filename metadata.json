@@ -1,0 +1,6 @@
+{
+  "name": "REVOGUE - Pre-loved Fashion Marketplace",
+  "description": "Give Good Things a Second Life. A full-stack resale marketplace with buyer and seller flows, order tracking, condition grading, and admin controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
